@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Character AI</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div class="container">
+<!--    <button type="button" onclick="window.Telegram.WebApp"></button>-->
+    <div class="char-card">
+        <div class="char-card__image">
+            <img src="static/img/mario.png" alt="Марио" />
+        </div>
+        <div class="name">Марио</div>
+        <div class="type">Персонаж</div>
+        <div class="choose">
+            <button class="char-button" type="button" id="Mario" onclick="send_data(this)">
+                Выбрать
+            </button>
+        </div>
+    </div>
+    <div class="char-card">
+        <div class="char-card__image">
+            <img src="static/img/albert.png" alt="Эйнштейн" />
+        </div>
+        <div class="name">Альберт Эйнштейн</div>
+        <div class="type">Физик-теоретик</div>
+        <div class="choose">
+            <button class="char-button" type="button" id="Albert" onclick="send_data(this)">
+                Выбрать
+            </button>
+        </div>
+    </div>
+</div>
+<script>
+    function send_data(e) {
+        window.Telegram.WebApp.sendData(e.id);
+
+        window.Telegram.WebApp.close();
+    }
+</script>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</body>
+</html>
