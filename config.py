@@ -14,4 +14,3 @@ DB_PASSWORD = os.getenv("DB_PASSWORD")
 AMPLITUDE_API_KEY = os.getenv("AMPLITUDE_KEY")
 
 WEB_PAGE_URL = "https://fileshare.su/test"
-
