@@ -26,8 +26,8 @@ class Settings(Base):
     __tablename__ = "settings"
 
     setting_id = Column(Integer, autoincrement=True, primary_key=True)
-    started_message_1 = Column(String, default="Привет! Это первое")
-    started_message_2 = Column(String, default="Привет! Это уже второе")
+    started_message_1 = Column(String, default="👋 <b>Привет!</b>\n🤖 Выбери персонажа, нажам на кнопку снизу.")
+    started_message_2 = Column(String, default="✅ Начиный общение, персонаж успешно выбран!")
 
 
 class Messages(Base):

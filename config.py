@@ -13,5 +13,5 @@ DB_PASSWORD = os.getenv("DB_PASSWORD")
 
 AMPLITUDE_API_KEY = os.getenv("AMPLITUDE_KEY")
 
-WEB_PAGE_URL = "https://c63a-45-82-69-182.ngrok-free.app/"
+WEB_PAGE_URL = "https://bfbc-89-113-149-220.ngrok-free.app"
 
